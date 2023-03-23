@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Ikemefuna Eke Sample Form</h1>
+    <p id="description">
+      Thank you for taking the time to help us improve the platform
+    </p>
+    <form id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label">Name <input id="name" type="text" placeholder="Enter your name" required></label>  
+        <label for="email" id="email-label">Email <input id="email" type="email" placeholder="Enter your email" required></label>  
+        <label for="number" id="number-label" >Age <input id="number" type="number" min="13" max="50" placeholder="Age"></label>
+      </fieldset>
+      <fieldset>
+        <label>Which option best describes your current role?
+          <select id="dropdown">
+            <option>Student</option>
+            <option>Other</option>
+          </select>
+        </label>
+        <label>Do you like learning?</label>
+        <label for="yes">
+          <input type="radio" name="radio-question" id="yes" class="inline" value="yes">Yes
+        </label>
+        <label for="no">
+          <input type="radio" name="radio-question" id="no" class="inline" value="no">No
+        </label>
+      </fieldset>
+      <fieldset>
+       <label>Which are your favourite subjects?</label>
+         <label for="math">
+          <input type="checkbox" name="radio-question" id="math" class="inline" value="math">Math
+        </label>
+        <label for="physics">
+          <input type="checkbox" name="radio-question" id="physics" class="inline" value="physics">Physics
+        </label>
+        <label for="none">
+          <input type="checkbox" name="radio-question" id="none" class="inline" value="none">None
+        </label>
+      </fieldset>
+      <label for="comment">
+        <textarea id="comment" placeholder="Enter your comment here..."rows="3" cols="30"></textarea>
+        <input type="submit" id="submit">
+      </label>
+    </form>
+  </body>
+</html>
